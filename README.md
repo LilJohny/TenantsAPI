@@ -7,7 +7,7 @@ TenantsAPI is a tool designed using FastAPI to streamline tenant management proc
 
 ### Routes:
 1. **List Tenants**
-   - This route fetches and displays a  list of all available tenants, including details such as tenant ID, number, and additional information.
+- This route fetches and displays a  list of all available tenants, including details such as tenant ID, number, and additional information.
 
 2. **Get Tenant by ID**
 - This functionality allows for retrieving a tenant's details (ID, number, and info) based on their unique identifier(ID).
