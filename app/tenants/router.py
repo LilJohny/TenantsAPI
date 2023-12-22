@@ -10,7 +10,6 @@ from .schemas import TenantInSchema, TenantOutSchema
 tenants_router = APIRouter(prefix="/tenants",
                            tags=["tenants"], )
 
-add_pagination(tenants_router)
 
 
 @tenants_router.get("/{tenant_id}")
