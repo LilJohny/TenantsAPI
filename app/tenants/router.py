@@ -1,6 +1,6 @@
 from database import get_db
 from fastapi import APIRouter, HTTPException, Depends
-from fastapi_pagination import Page, add_pagination
+from fastapi_pagination import Page
 from fastapi_pagination.ext.sqlalchemy import paginate
 from sqlalchemy.orm import Session
 
@@ -9,7 +9,6 @@ from .schemas import TenantInSchema, TenantOutSchema
 
 tenants_router = APIRouter(prefix="/tenants",
                            tags=["tenants"], )
-
 
 
 @tenants_router.get("/{tenant_id}")
