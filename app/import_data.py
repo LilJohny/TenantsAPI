@@ -1,11 +1,12 @@
+import logging
 import os
+import sys
+
 import ijson
 from sqlalchemy.exc import SQLAlchemyError
 
-from app.tenants import TenantSchema, TenantModel
 from app.database import get_db
-import logging
-import sys
+from app.tenants import TenantSchema, TenantModel
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 

@@ -1,11 +1,11 @@
-from database import get_db
 from fastapi import APIRouter, HTTPException, Depends
 from fastapi_pagination import Page
 from fastapi_pagination.ext.sqlalchemy import paginate
 from sqlalchemy.orm import Session
 
-from .models import TenantModel
-from .schemas import TenantInSchema, TenantOutSchema
+from app.database import get_db
+from app.tenants.models import TenantModel
+from app.tenants.schemas import TenantInSchema, TenantOutSchema
 
 tenants_router = APIRouter(prefix="/tenants",
                            tags=["tenants"], )

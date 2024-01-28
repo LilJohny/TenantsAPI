@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.dialects.postgresql import JSON
 
-from database import Base
+from app.database import Base
 
 
 class TenantModel(Base):
